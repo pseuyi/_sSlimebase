@@ -28,3 +28,44 @@ Here’s a basic outline for the exercise:
 - Authentication & Users is optional (you will tackle this in more depth for Grace Shopper).
 
 This exercise is designed to take around 6 hours.
+
+//TODOS//
+
+habitat actions and combine reducers
+install bootstrap
+	unstyle lists
+
+hook up routes to post/delete/update data
+routes for all snails view with pics?
+	pics need to be saved in db somehow
+on snails page, need an add form
+on regions page, need styling
+
+/snails page not persistent?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

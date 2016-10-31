@@ -1,0 +1,45 @@
+body {
+	background-image: url('/images/stucco_@2X.png');
+}
+
+#logo {
+	width: auto;
+	height: 70px;
+}
+
+#slimebase {
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(235,233,249,1)), color-stop(6%, rgba(216,208,239,1)), color-stop(9%, rgba(206,199,236,1)), color-stop(88%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+	background: linear-gradient(to bottom, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 6%, rgba(206,199,236,1) 9%, rgba(0,0,0,1) 88%, rgba(0,0,0,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#slimebase a{
+	color: #bb7cff;
+}
+
+.snail {
+	border: 1px solid #a5a5a5;
+	margin: 1em 1em;
+	padding: 10px;
+	width: 300px;
+	height: auto;
+	background-color: white;
+}
+
+.snail img {
+	display: block;
+	margin: 0 auto;
+	max-width: 280px;
+	height: auto;
+}
+
+.habitat {
+	border: 1px solid #a5a5a5;
+	margin: 1em 1em;
+	padding: 10px;
+	width: 300px;
+	height: auto;
+	background-color: white;
+	display: inline-block;
+}

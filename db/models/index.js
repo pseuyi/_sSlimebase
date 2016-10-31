@@ -4,6 +4,10 @@
 // so any other part of the application could call sequelize.model('User')
 // to get access to the User model.
 
-const User = require('./user')
+const Snail = require('./snail')
+const Habitat = require('./habitat')
 
-module.exports = {User}
+Snail.belongsTo(Habitat);
+Habitat.hasMany(Snail);
+
+module.exports = {Snail, Habitat}

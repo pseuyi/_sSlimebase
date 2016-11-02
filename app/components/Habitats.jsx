@@ -49,7 +49,7 @@ class Habitats extends Component {
         <ul className='list-unstyled'>
         {this.props.habitats && this.props.habitats.map((habitat)=>(
           <li key={habitat.id} className="col-md-4 habitat">
-            <p>{habitat.name}</p>
+            <p><Link to={`habitats/${habitat.id}`}>{habitat.name}</Link></p>
             <p>{habitat.geo}</p>
           </li>
           ))}

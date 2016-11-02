@@ -24,6 +24,14 @@ api.post('/snails', (req, res, next)=>{
 	.catch(next)
 })
 
+api.get('/snails/:id', (req, res, next)=>{
+	Snail.findById(req.params.id)
+	.then((foundSnail)=>{
+		res.json(foundSnail);
+	})
+	.catch(next)
+})
+
 api.put('/snails/:id', (req, res, next)=>{
 	Snail.findById(req.params.id)
 	.then((foundSnail)=>{

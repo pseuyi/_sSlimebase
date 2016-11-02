@@ -4,6 +4,7 @@ const ADD_SNAIL = 'ADD_SNAIL';
 const LOAD_SNAILS = 'LOAD_SNAILS';
 const ADD_HABITAT = 'ADD_HABITAT';
 const LOAD_HABITATS = 'LOAD_HABITATS';
+const LOAD_HABITAT = 'LOAD_HABITAT';
 
 export const add = snail => ({
 	type: ADD_SNAIL,
@@ -21,6 +22,10 @@ export const addHabitatAction = habitat => ({
 export const loadHabitatsAction = habitats => ({
 	type: LOAD_HABITATS,
 	habitats
+})
+export const loadHabitatAction = habitat => ({
+    type: LOAD_HABITAT,
+    habitat
 })
 
 export const addSnail = snailData => dispatch => {
@@ -52,5 +57,11 @@ export const addHabitat = habitatData => dispatch => {
 export const loadHabitats = () => dispatch => {
     axios.get('/api/habitats')
      .then(res => (dispatch(loadHabitatsAction(res.data))))
+     .catch(err => console.error(`LOAD unsuccesful`, err))
+}
+
+export const loadHabitat = () => dispatch => {
+    axios.get('/api/habitats/:id')
+     .then(res => (dispatch(loadHabitatAction(res.data))))
      .catch(err => console.error(`LOAD unsuccesful`, err))
 }

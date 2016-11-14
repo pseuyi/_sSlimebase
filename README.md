@@ -11,7 +11,7 @@ npm start
 
 ## screenshot
 
-![screenshot]()
+![screenshot](https://github.com/fredanada/slimebase/raw/master/public/screenshot.png)
 
 
 
